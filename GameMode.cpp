@@ -268,12 +268,12 @@ bool GameMode::handle_event(SDL_Event const &evt, glm::uvec2 const &window_size)
     return false;
 }
 
-//glm::quat getQuat(float angle){
-//    glm::quat dr = glm::quat(1.0f, 0.0f, 0.0f, 0.0f);
-//    float amt = angle*0.1f;
-//    dr = glm::angleAxis(amt, glm::vec3(0.0f, 0.0f, 1.0f)) * dr;
-//    return dr;
-//}
+glm::quat getQuat(float angle){
+    glm::quat dr = glm::quat(1.0f, 0.0f, 0.0f, 0.0f);
+    float amt = angle*0.1f;
+    dr = glm::angleAxis(amt, glm::vec3(0.0f, 0.0f, 1.0f)) * dr;
+    return dr;
+}
 
 //TODO replace with custom function
 
